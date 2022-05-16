@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEC63D">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="WELCOME"
+            app:titleTextColor="@android:color/black"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:text="Memory Buzz"
+            android:textFontWeight="500"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:text="Your simple wallet memory"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/recipebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="Recipe"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#EFEFEF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/birthdaybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Birthday"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#EFEFEF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/memobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Memo"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#EFEFEF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/placesbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Memorial Places"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#EFEFEF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
