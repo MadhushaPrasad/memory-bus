@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.memory_bus">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +12,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".birthday.UpdateBirthday"></activity>
-        <activity android:name=".birthday.BirthdayList" />
-        <activity android:name=".birthday.NewBirthday" />
-        <activity android:name=".birthday.BirthdayBook" />
-        <activity android:name=".recipe.UpdateRecipe" />
-        <activity android:name=".recipe.RecipeList" />
-        <activity android:name=".recipe.NewRecipe" />
-        <activity android:name=".recipe.RecipeBook" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".Places.EditPlace"
+            android:exported="true" />
+        <activity
+            android:name=".Places.AddPlace"
+            android:exported="true" />
+        <activity
+            android:name=".Places.PlaceMainScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Memo.EditMemo"
+            android:exported="true" />
+        <activity
+            android:name=".Memo.AddMemo"
+            android:exported="true" />
+        <activity
+            android:name=".Memo.MemoMainScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Birthday.EditBirthday"
+            android:exported="true" />
+        <activity
+            android:name=".Birthday.AddBirthday"
+            android:exported="true" />
+        <activity
+            android:name=".Birthday.BirthdayMainScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Recipe.EditRecipe"
+            android:exported="true" />
+        <activity
+            android:name=".Recipe.ViewRecipe"
+            android:exported="true" />
+        <activity
+            android:name=".Recipe.AddRecipe"
+            android:exported="true" />
+        <activity
+            android:name=".Recipe.RecipeMainScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
