@@ -79,6 +79,26 @@ public class AddRecipe extends AppCompatActivity {
                 String recipeName = recipename.getText().toString();
                 String recipe = recipeText.getText().toString();
 
+                if (recipeName.equals("")) {
+                    Toast.makeText(AddRecipe.this, "Please add a name for recipe!", Toast.LENGTH_SHORT).show();
+                    System.out.println(recipeName.equals(""));
+                    return;
+                } else if ((recipeName.length() < 5)) {
+                    Toast.makeText(AddRecipe.this, "Please add a name within atleast 5 charactors!", Toast.LENGTH_SHORT).show();
+                    System.out.println(recipeName.length() < 5);
+                    return;
+                }
+
+                if (recipe.equals("")) {
+                    Toast.makeText(AddRecipe.this, "Please add a Recipe Description for recipe!", Toast.LENGTH_SHORT).show();
+                    System.out.println(recipe.equals(""));
+                    return;
+                } else if ((recipe.length() < 8)) {
+                    Toast.makeText(AddRecipe.this, "Please add a Recipe within atleast 8 charactors!", Toast.LENGTH_SHORT).show();
+                    System.out.println(recipe.length() < 8);
+                    return;
+                }
+
 
                 FirebaseDatabase addressDatabase = FirebaseDatabase.getInstance();
                 DatabaseReference ref = addressDatabase.getReference("Recipe");
